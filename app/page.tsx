@@ -22,7 +22,7 @@ export default function Home() {
             src="/file.svg"
             alt="File icon"
             width={16}
-            height={16}
+            height={15}
           />
           Learn
         </a>
