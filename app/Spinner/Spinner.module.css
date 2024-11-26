@@ -1,0 +1,30 @@
+/* Spinner.module.css */
+.spin {
+    animation: spin 2s linear infinite; /* Adjust the duration as needed */
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Spinner.module.css */
+.vibrate {
+    animation: vibrate 1s infinite; /* Adjust the duration as needed */
+  }
+  
+  @keyframes vibrate {
+    0%, 50%, 100% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(-10px, 0);
+    }
+    75% {
+      transform: translate(10px, 0);
+    }
+  }
