@@ -1,7 +1,7 @@
 'use client'
 
-import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
+import Head from 'next/head'
 
 const DaysLeft: React.FC = () => {
   const [daysLeft, setDaysLeft] = useState<number>(0)
@@ -24,8 +24,8 @@ const DaysLeft: React.FC = () => {
       <Head>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
       </Head>
-      <div className="w-full text-center" style={{ position: 'absolute', top: '25%' }}>
-        <p className={"text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl whitespace-nowrap overflow-hidden text-ellipsis font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500"}>
+      <div className="w-full flex justify-center items-start" style={{ height: '75vh' }}>
+        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl whitespace-nowrap overflow-hidden text-ellipsis font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 mt-16">
           Dager igjen til 10Mila: {daysLeft}
         </p>
       </div>
