@@ -1,5 +1,6 @@
 'use client'
 
+import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
 
 const DaysLeft: React.FC = () => {
@@ -19,9 +20,16 @@ const DaysLeft: React.FC = () => {
   }, [])
 
   return (
-    <div>
-      <p className="text-3xl">Dager igjen til 10Mila: {daysLeft}</p>
-    </div>
+    <>
+      <Head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
+      </Head>
+      <div className="w-full text-center" style={{ position: 'absolute', top: '25%' }}>
+        <p className={"text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl whitespace-nowrap overflow-hidden text-ellipsis font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500"}>
+          Dager igjen til 10Mila: {daysLeft}
+        </p>
+      </div>
+    </>
   )
 }
 
